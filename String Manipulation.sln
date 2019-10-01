@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "String Manipulation", "String Manipulation\String Manipulation.vbproj", "{F3A1C2F4-B6BA-482C-AA76-C1CBB4143C4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A1C2F4-B6BA-482C-AA76-C1CBB4143C4B}.Debug|x86.ActiveCfg = Debug|x86
+		{F3A1C2F4-B6BA-482C-AA76-C1CBB4143C4B}.Debug|x86.Build.0 = Debug|x86
+		{F3A1C2F4-B6BA-482C-AA76-C1CBB4143C4B}.Release|x86.ActiveCfg = Release|x86
+		{F3A1C2F4-B6BA-482C-AA76-C1CBB4143C4B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
