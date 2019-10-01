@@ -1,0 +1,29 @@
+Module Module1
+
+    Sub Main()
+        Dim NoOfAlphabets, NoOfNonAlphabets, Counter As Integer
+        Dim Str1, nextChar As String
+
+        Str1 = ""
+        nextChar = ""
+        Counter = 0
+        NoOfAlphabets = 0
+        NoOfNonAlphabets = 0
+
+        Console.Write("Enter Srting: ")
+        Str1 = Console.ReadLine()
+
+        For Counter = 1 To Len(Str1)
+            nextChar = Mid(Str1, Counter, 1)
+            If LCase(nextChar) >= "a" And LCase(nextChar) <= "z" Then
+                NoOfAlphabets = NoOfAlphabets + 1
+            Else
+                NoOfNonAlphabets = NoOfNonAlphabets + 1
+            End If
+        Next
+        Console.WriteLine("Number of Alphabets =" & NoOfAlphabets)
+        Console.Write("Number of Non Alphabets =" & NoOfNonAlphabets)
+        Console.ReadKey()
+    End Sub
+
+End Module
