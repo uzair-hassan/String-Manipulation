@@ -175,9 +175,9 @@ Module Module1
             nY >= 1 And
             nZ >= 1 Then
 
-            Console.Write("Sentece is Pangram")
+            Console.Write("Sentece is a Pangram")
         Else
-            Console.Write("Sentence in not Pangram")
+            Console.Write("Sentence in a not Pangram")
         End If
         Console.ReadKey()
     End Sub
