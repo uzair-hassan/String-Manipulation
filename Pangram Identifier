@@ -1,0 +1,40 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1, NewString As String
+        Dim nextChar, PreChar As Char
+        Dim Counter, Sum As Integer
+
+        Str1 = ""
+        PreChar = ""
+        nextChar = ""
+        NewString = ""
+        Counter = 0
+        Sum = 0
+
+        Console.Write("Enter a sentence: ")
+        Str1 = Console.ReadLine()
+
+        For Counter = 1 To Len(Str1)
+            nextChar = Mid(Str1, Counter, 1)
+            nextChar = LCase(nextChar)
+
+            If nextChar >= "a" And nextChar <= "z" Then
+                If nextChar <> PreChar Then
+                    NewString = NewString & nextChar
+                    Sum = Sum + Asc(nextChar)
+                    PreChar = nextChar
+                End If
+            End If
+
+        Next
+
+        If Sum >= 2015 Then
+            Console.Write("Sentece is Pangram")
+        Else
+            Console.Write("Sentence in not Pangram")
+        End If
+        Console.ReadKey()
+    End Sub
+
+End Module
