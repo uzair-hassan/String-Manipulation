@@ -1,35 +1,180 @@
 Module Module1
 
     Sub Main()
-        Dim Str1, NewString As String
-        Dim nextChar, PreChar As Char
-        Dim Counter, Sum As Integer
+        Dim Str1 As String
+        Dim nextChar As Char
+        Dim nA, nB, nC, nD, nE, nF, nG, nH, nI, nJ, nK, nL, nM, nN, nO, nP, nQ, nR, nS, nT, nU, nV, nW, nX, nY, nZ As Integer
 
         Str1 = ""
-        PreChar = ""
         nextChar = ""
-        NewString = ""
-        Counter = 0
-        Sum = 0
+        nA = 0
+        nB = 0
+        nC = 0
+        nD = 0
+        nE = 0
+        nF = 0
+        nG = 0
+        nH = 0
+        nI = 0
+        nJ = 0
+        nK = 0
+        nL = 0
+        nM = 0
+        nN = 0
+        nO = 0
+        nP = 0
+        nQ = 0
+        nR = 0
+        nS = 0
+        nT = 0
+        nU = 0
+        nV = 0
+        nW = 0
+        nX = 0
+        nY = 0
+        nZ = 0
+
 
         Console.Write("Enter a sentence: ")
         Str1 = Console.ReadLine()
 
         For Counter = 1 To Len(Str1)
             nextChar = Mid(Str1, Counter, 1)
-            nextChar = LCase(nextChar)
+            nextChar = UCase(nextChar)
 
-            If nextChar >= "a" And nextChar <= "z" Then
-                If nextChar <> PreChar Then
-                    NewString = NewString & nextChar
-                    Sum = Sum + Asc(nextChar)
-                    PreChar = nextChar
-                End If
+            If nextChar = "A" Then
+                nA = nA + 1
+            End If
+
+            If nextChar = "B" Then
+                nB = nB + 1
+            End If
+
+            If nextChar = "C" Then
+                nC = nC + 1
+            End If
+
+            If nextChar = "D" Then
+                nD = nD + 1
+            End If
+
+            If nextChar = "E" Then
+                nE = nE + 1
+            End If
+
+            If nextChar = "F" Then
+                nF = nF + 1
+            End If
+
+            If nextChar = "G" Then
+                nG = nG + 1
+            End If
+
+            If nextChar = "H" Then
+                nH = nH + 1
+            End If
+
+            If nextChar = "I" Then
+                nI = nI + 1
+            End If
+
+            If nextChar = "J" Then
+                nJ = nJ + 1
+            End If
+
+            If nextChar = "K" Then
+                nK = nK + 1
+            End If
+
+            If nextChar = "L" Then
+                nL = nL + 1
+            End If
+
+            If nextChar = "M" Then
+                nM = nM + 1
+            End If
+
+            If nextChar = "N" Then
+                nN = nN + 1
+            End If
+
+            If nextChar = "O" Then
+                nO = nO + 1
+            End If
+
+            If nextChar = "P" Then
+                nP = nP + 1
+            End If
+
+            If nextChar = "Q" Then
+                nQ = nQ + 1
+            End If
+
+            If nextChar = "R" Then
+                nR = nR + 1
+            End If
+
+            If nextChar = "S" Then
+                nS = nS + 1
+            End If
+
+            If nextChar = "T" Then
+                nT = nT + 1
+            End If
+
+            If nextChar = "U" Then
+                nU = nU + 1
+            End If
+
+            If nextChar = "V" Then
+                nV = nV + 1
+            End If
+
+            If nextChar = "W" Then
+                nW = nW + 1
+            End If
+
+            If nextChar = "X" Then
+                nX = nX + 1
+            End If
+
+            If nextChar = "Y" Then
+                nY = nY + 1
+            End If
+
+            If nextChar = "Z" Then
+                nZ = nZ + 1
             End If
 
         Next
 
-        If Sum >= 2015 Then
+        If nA >= 1 And
+            nB >= 1 And
+            nC >= 1 And
+            nD >= 1 And
+            nE >= 1 And
+            nF >= 1 And
+            nG >= 1 And
+            nH >= 1 And
+            nI >= 1 And
+            nJ >= 1 And
+            nK >= 1 And
+            nL >= 1 And
+            nM >= 1 And
+            nN >= 1 And
+            nO >= 1 And
+            nP >= 1 And
+            nQ >= 1 And
+            nR >= 1 And
+            nS >= 1 And
+            nT >= 1 And
+            nU >= 1 And
+            nV >= 1 And
+            nW >= 1 And
+            nX >= 1 And
+            nY >= 1 And
+            nZ >= 1 Then
+
             Console.Write("Sentece is Pangram")
         Else
             Console.Write("Sentence in not Pangram")
