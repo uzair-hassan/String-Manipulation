@@ -1,0 +1,33 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1, Str2 As String
+        Dim nextChar As Char
+        Dim Counter = 0
+
+        Str1 = ""
+        Str2 = ""
+        nextChar = ""
+        Counter = 0
+
+        Console.Write("Enter a String: ")
+        Str1 = Console.ReadLine()
+
+        For Counter = 1 To Len(Str1)
+            nextChar = UCase(Mid(Str1, Counter, 1))
+
+            If nextChar >= "A" And nextChar <= "Z" Then
+                Str2 = Str2 & nextChar
+            Else
+                If nextChar = " " Then
+                    Console.WriteLine(Str2)
+                    Str2 = ""
+                End If
+            End If
+
+        Next
+        Console.WriteLine(Str2)
+        Console.ReadKey()
+    End Sub
+
+End Module
