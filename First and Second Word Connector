@@ -1,0 +1,32 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1, Str2, FinalString, FirstWord, SecWord As String
+        Dim SP As Integer
+
+        Str1 = ""
+        Str2 = ""
+        FinalString = ""
+        FirstWord = ""
+        SecWord = ""
+        SP = 0
+        Console.Write("Enter String 1: ")
+        Str1 = Console.ReadLine()
+
+        Console.Write("Enter String 2: ")
+        Str2 = Console.ReadLine()
+
+        SP = InStr(Str1, " ")
+        FirstWord = Left(Str1, SP - 1)
+
+        SP = InStr(Str2, " ")
+        SecWord = Right(Str2, Len(Str2) - SP)
+
+        FinalString = FirstWord & " " & SecWord
+
+        Console.WriteLine("Final String: " & FinalString)
+        Console.ReadKey()
+
+    End Sub
+
+End Module
