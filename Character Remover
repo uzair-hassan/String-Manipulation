@@ -1,0 +1,33 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1, NewString As String
+        Dim Remove, nextChar As Char
+        Dim Counter As Integer
+
+        Str1 = ""
+        NewString = ""
+        Remove = ""
+        nextChar = ""
+        Counter = 0
+
+        Console.Write("Enter String: ")
+        Str1 = Console.ReadLine
+
+        Console.Write("Enter the character to remove: ")
+        Remove = Console.ReadLine()
+
+        For Counter = 1 To Len(Str1)
+            nextChar = Mid(Str1, Counter, 1)
+
+            If nextChar <> Remove Then
+                NewString = NewString & nextChar
+            End If
+        Next
+
+        Console.WriteLine("New String is: " & NewString)
+        Console.ReadKey()
+
+    End Sub
+
+End Module
