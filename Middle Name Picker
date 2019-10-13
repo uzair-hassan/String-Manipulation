@@ -1,0 +1,27 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1 As String
+        Dim SP1 As Integer
+        Dim SP2 As Integer
+        Dim MiddleWord As String
+
+        Str1 = ""
+        SP1 = 0
+        SP2 = 0
+        MiddleWord = ""
+
+        Console.Write("Please enter a name consist of three words only: ")
+        Str1 = Console.ReadLine()
+
+        SP1 = InStr(Str1, " ")
+        SP2 = InStr(SP1, Str1, " ")
+
+        MiddleWord = Mid(Str1, SP1 + 1, SP2 - 2)
+        Console.WriteLine("Middle Word is: " & MiddleWord)
+
+        Console.ReadKey()
+
+    End Sub
+
+End Module
