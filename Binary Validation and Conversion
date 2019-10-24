@@ -36,7 +36,7 @@ Module Module1
         End If
 
         If validBinaryString = False Then
-            Console.WriteLine("Not a valid Binary Number")
+            Console.WriteLine("Not a valid Binary Number Or Out of Range")
         Else
             Console.WriteLine("A valid Binary Number")
         End If
@@ -58,3 +58,4 @@ Module Module1
     End Sub
 
 End Module
+
